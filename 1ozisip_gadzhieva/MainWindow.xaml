@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_1ozisip_gadzhieva"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Первое графическое приложение Гаджиевой З.А." Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="45"/>
+        </Grid.RowDefinitions>
+        <Frame Name="MainFrame" Grid.Row="1" HorizontalAlignment="Center" Width="800" Height="344" VerticalAlignment="Bottom">
+        </Frame>
+        <Button Content="Назад" Background="LightCyan" HorizontalAlignment="Left"
+                Width="100" Height="40" Foreground="Fuchsia" FontSize="26" 
+                FontWeight="bold" FontFamily="Arial" Margin="4,0,0,0" Name="Back"
+                ToolTip="Кликните для возврата на предыдущую страницу" Grid.Row="0">
+        </Button>
+        <Label Content="Разработчик: 1озИСИП-2124, Гаджиева З.А." Grid.Row="2" FontWeight="bold" 
+               FontFamily="Arial" FontSize="22" HorizontalAlignment="Center" Foreground="Fuchsia"/>
     </Grid>
 </Window>
