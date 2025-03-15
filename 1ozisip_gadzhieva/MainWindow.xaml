@@ -12,7 +12,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="45"/>
         </Grid.RowDefinitions>
-        <Frame Name="MainFrame" Grid.Row="1" HorizontalAlignment="Center" Width="800" Height="344" VerticalAlignment="Bottom">
+        <Frame Name="MainFrame" Grid.Row="1" HorizontalAlignment="Center" Width="800" Height="344" 
+               Source="Pages/Str1.xaml" VerticalAlignment="Bottom">
         </Frame>
         <Button Content="Назад" Background="LightCyan" HorizontalAlignment="Left"
                 Width="100" Height="40" Foreground="Fuchsia" FontSize="26" 
