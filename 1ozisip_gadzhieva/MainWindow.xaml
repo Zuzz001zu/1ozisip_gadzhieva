@@ -20,6 +20,8 @@
                 FontWeight="bold" FontFamily="Arial" Margin="4,0,0,0" Name="Back"
                 ToolTip="Кликните для возврата на предыдущую страницу" Grid.Row="0">
         </Button>
+        <Button Content="Управление пользователями" HorizontalAlignment="Center" Click="Button_Click">
+        </Button>
         <Label Content="Разработчик: 1озИСИП-2124, Гаджиева З.А." Grid.Row="2" FontWeight="bold" 
                FontFamily="Arial" FontSize="22" HorizontalAlignment="Center" Foreground="Fuchsia"/>
     </Grid>

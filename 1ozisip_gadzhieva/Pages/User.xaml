@@ -1,0 +1,87 @@
+﻿<Page x:Class="_1ozisip_gadzhieva.Pages.User"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_1ozisip_gadzhieva.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Управление пользователями">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42*"></RowDefinition>
+            <RowDefinition Height="64*"></RowDefinition>
+            <RowDefinition Height="65*"></RowDefinition>
+            <RowDefinition Height="65*"></RowDefinition>
+            <RowDefinition Height="46*"></RowDefinition>
+            <RowDefinition Height="103*"></RowDefinition>
+            <RowDefinition Height="64*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Управление пользователями" Grid.Row="0" FontWeight="Bold" FontFamily="Arial" 
+               FontSize="22" HorizontalAlignment="Center" Foreground="DarkGray" Grid.ColumnSpan="5" Width="328" />
+        <Button Content="+ Добавление нового" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40"
+                Width="150" Foreground="Black" FontSize="12" FontWeight="Bold"
+                FontFamily="Arial" Name="btnAdd" Grid.Column="1" Margin="0,42,0,0" Grid.RowSpan="2"/>
+        <Label Content="Фильтр по ролям:" Grid.Column="3" FontSize="12" Foreground="DarkGray"
+               HorizontalAlignment="Center"  FontFamily="Arial" Width="186" Margin="0,42,0,0" Grid.RowSpan="2" />
+        <Label Content="Сортировать по:" Grid.Row="1" Grid.Column="3" FontSize="12" Foreground="DarkGray"
+               HorizontalAlignment="Center" FontFamily="Arial" Width="186" Margin="0,64,0,0" Grid.RowSpan="2" />
+        <Label Content="Поиск:" Grid.Row="2" Grid.Column="3" FontSize="12" Foreground="DarkGray"
+               HorizontalAlignment="Left" FontFamily="Arial" Width="108" Margin="0,65,0,24" Grid.RowSpan="2" />
+        <TextBox Name="txtSearch" Text="" FontSize="15" FontFamily="Arial"
+                 ToolTip="Поиск" Width="150" Grid.Row="3" Grid.Column="4"
+                 HorizontalAlignment="Center" Background="Transparent" Margin="0,15,0,16" />
+        <TextBlock Text="Поиск" Foreground="Gray" Name="txtHintLog" 
+             Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" Margin="0,15,0,16"
+            FontSize="15" FontFamily="arial"></TextBlock>
+        <ComboBox Name="cmbSort" Grid.Row="2" Grid.Column="4" Margin="18,15,19,15">
+            <ComboBoxItem>Имени</ComboBoxItem>
+            <ComboBoxItem>Фамилии</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Name="cmbRole" Grid.Row="1" Grid.Column="4" Margin="18,15,19,14">
+            <ComboBoxItem>Все роли</ComboBoxItem>
+            <ComboBoxItem>Администратор</ComboBoxItem>
+            <ComboBoxItem>Пользователь</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Обновить" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35"
+        Width="150" Foreground="Black" FontSize="12" FontWeight="Bold"
+        FontFamily="Arial" Name="btnRenew" Grid.Column="4" Grid.Row="4"/>
+        <Label Content="Всего пользователей: 123" Grid.Row="4" FontWeight="Bold" FontFamily="Arial" 
+       FontSize="12" HorizontalAlignment="Center" Foreground="DarkGray" Grid.Column="1"  />
+        <DataGrid Grid.Row="5" Grid.ColumnSpan="5" AutoGenerateColumns="False" IsReadOnly="True">
+        <!--<DataGrid.Rows>
+                Настройка строк таблицы
+            </DataGrid.Rows>-->
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Width="70"/>
+                <DataGridTextColumn Header="Имя" Width="70"/>
+                <DataGridTextColumn Header="Отчество" Width="70"/>
+                <DataGridTextColumn Header="Email" Width="70"/>
+                <DataGridTextColumn Header="Роль" Width="70"/>
+                <DataGridTemplateColumn Header="Редактирование" Width="170">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Edit"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Лого" Width="70">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="Resources/myPhoto.jpg"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Page>

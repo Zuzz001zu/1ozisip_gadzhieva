@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1ozisip_gadzhieva.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,20 @@ namespace _1ozisip_gadzhieva
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack) MainFrame.GoBack();
+        }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new User());
         }
     }
 }
