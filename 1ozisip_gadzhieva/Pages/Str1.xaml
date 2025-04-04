@@ -41,10 +41,6 @@
                 Background="Orange" Foreground="Black" Grid.Row="2" Grid.ColumnSpan="3"></Button>
         <Button Name="btnReg" Content="Регистрация" FontSize="30" FontWeight="Bold" FontFamily="Arial"
                 ToolTip="Нажмите для регистрации" Height="50" Width="220" Background="Orange" 
-                Foreground="Black" Grid.Row="3" Grid.ColumnSpan="3"></Button>
-        <ComboBox Name="cmbRole" Width="150" Height="50" Grid.Row="3" Grid.Column="2">
-            <ComboBoxItem> Администратор</ComboBoxItem>
-            <ComboBoxItem>Пользователь</ComboBoxItem>
-        </ComboBox>
+                Foreground="Black" Grid.Row="3" Grid.ColumnSpan="3" Click="btnReg_Click"></Button>
     </Grid>
 </Page>

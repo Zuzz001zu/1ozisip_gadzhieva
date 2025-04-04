@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace _1ozisip_gadzhieva.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Str2.xaml
+    /// Логика взаимодействия для Prifile.xaml
     /// </summary>
-    public partial class Str2 : Page
+    public partial class Prifile : Page
     {
-        public Str2()
+        public Prifile()
         {
             InitializeComponent();
         }
-
     }
 }

@@ -24,5 +24,10 @@ namespace _1ozisip_gadzhieva.Pages
         {
             InitializeComponent();
         }
+
+        private void btnReg_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Str2());
+        }
     }
 }
