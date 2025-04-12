@@ -25,19 +25,20 @@ namespace _1ozisip_gadzhieva
         {
             InitializeComponent();
         }
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            if (MainFrame.CanGoBack) MainFrame.GoBack();
-        }
-
-        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
-        {
-            
-        }
-
+   
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService.Navigate(new User());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService.Navigate(new Biz());
+        }
+
+        private void Back_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack) MainFrame.GoBack();
         }
     }
 }

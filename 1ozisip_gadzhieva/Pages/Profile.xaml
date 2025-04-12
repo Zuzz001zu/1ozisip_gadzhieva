@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:_1ozisip_gadzhieva.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="780"
       Title="Profile">
 
     <Grid>
@@ -28,53 +28,68 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Content="Редактирование профиля" Grid.Row="0" FontWeight="Bold" FontFamily="Arial" 
-        FontSize="22" HorizontalAlignment="Center" Foreground="DarkGray" Grid.ColumnSpan="5"/>
+            FontSize="22" HorizontalAlignment="Center" Foreground="DarkGray" Grid.ColumnSpan="5"/>
         <Label Content="Email:" Grid.Row="1" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-         HorizontalAlignment="Right" FontFamily="Arial" />
-        <Label Content="the.email@address.com" Grid.Row="1" Grid.Column="2" FontSize="12" Foreground="DarkGray"
- HorizontalAlignment="Left" FontFamily="Arial" />
+            HorizontalAlignment="Right" FontFamily="Arial" />
+        <Label Content="the.email@address.com" FontStyle="Italic" Grid.Row="1" Grid.Column="2" FontSize="12" Foreground="DarkGray"
+            HorizontalAlignment="Left" FontFamily="Arial" />
         <Label Content="Имя:" Grid.Row="2" Grid.Column="1" FontSize="12" Foreground="DarkGray"
- HorizontalAlignment="Right" FontFamily="Arial" />
-        <TextBox Name="txtName" Text="" FontSize="15" FontFamily="Arial"
-     ToolTip="Имя" Width="150" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" />
-        <TextBlock Text="Имя" Foreground="Gray" Name="txtNme" 
- Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Width="150" TextAlignment="Center"
-FontSize="15" FontFamily="arial"></TextBlock>
-        <Label Content="Фамилия:" Grid.Row="3" Grid.Column="1" FontSize="12" Foreground="DarkGray"
- HorizontalAlignment="Right" FontFamily="Arial" />
+            HorizontalAlignment="Right" FontFamily="Arial" />
+        <TextBox Name="txtName" Text="" FontSize="15" FontFamily="Arial" Height="35" Width="150"
+            ToolTip="Имя" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center"/> 
+        <TextBlock Text="Имя" Foreground="Gray" Name="txtNme" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"
+             TextAlignment="Center" FontSize="15" FontFamily="arial">
+            </TextBlock> 
+            <Label Content="Фамилия:" Grid.Row="3" Grid.Column="1" FontSize="12" Foreground="DarkGray"
+            HorizontalAlignment="Right" FontFamily="Arial" />
+        <TextBox Name="txtSurname" Text="" FontSize="15" FontFamily="Arial" Height="35" Width="150"
+            ToolTip="Фамилия" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" />
+        <TextBlock Text="Фамилия" Foreground="Gray" Name="txtSrnm" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" 
+             VerticalAlignment="Center" TextAlignment="Center" FontSize="15" FontFamily="arial"></TextBlock>
         <Label Content="Пол:" Grid.Row="4" Grid.Column="1" FontSize="12" Foreground="DarkGray"
- HorizontalAlignment="Right" FontFamily="Arial" />
+            HorizontalAlignment="Right" FontFamily="Arial" />
         <Label Content="Дата рождения:" Grid.Row="5" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-HorizontalAlignment="Right" FontFamily="Arial"/>
+           HorizontalAlignment="Right" FontFamily="Arial"/>
         <Label Content="Страна:" Grid.Row="6" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-HorizontalAlignment="Right" FontFamily="Arial"/>
-        
-        
-        
-        <Label Content="Фильтр по ролям:" Grid.Column="3" FontSize="12" Foreground="DarkGray"
-        HorizontalAlignment="Center"  FontFamily="Arial" Width="186" Margin="0,42,0,0" Grid.RowSpan="2" />
-        <Label Content="Сортировать по:" Grid.Row="1" Grid.Column="3" FontSize="12" Foreground="DarkGray"
-        HorizontalAlignment="Center" FontFamily="Arial" Width="186" Margin="0,64,0,0" Grid.RowSpan="2" />
-        <Label Content="Поиск:" Grid.Row="2" Grid.Column="3" FontSize="12" Foreground="DarkGray"
-        HorizontalAlignment="Left" FontFamily="Arial" Width="108" Margin="0,65,0,24" Grid.RowSpan="2" />
-        <TextBox Name="txtSearch" Text="" FontSize="15" FontFamily="Arial"
-          ToolTip="Поиск" Width="150" Grid.Row="3" Grid.Column="4"
-          HorizontalAlignment="Center" Background="Transparent" Margin="0,15,0,16" />
-        <TextBlock Text="Поиск" Foreground="Gray" Name="txtHintLog" 
-      Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" Margin="0,15,0,16"
-     FontSize="15" FontFamily="arial"></TextBlock>
-        <ComboBox Name="cmbSort" Grid.Row="2" Grid.Column="4" Margin="18,15,19,15">
-            <ComboBoxItem>Имени</ComboBoxItem>
-            <ComboBoxItem>Фамилии</ComboBoxItem>
+           HorizontalAlignment="Right" FontFamily="Arial"/>
+        <Label Content="Смена пароля" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" FontSize="20" Foreground="DarkGray"
+               HorizontalAlignment="Center"  FontFamily="Arial" />
+        <Label Content="Оставьте эти поля, незаполненными, если вы не хотите изменять пароль." FontStyle="Italic"
+               Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="2"  FontSize="12" Foreground="DarkGray" HorizontalAlignment="Center"  
+               FontFamily="Arial" Grid.RowSpan="2"/>
+        <Label Content="Пароль:" Grid.Row="3" Grid.Column="3" FontSize="12" Foreground="DarkGray"
+               HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
+        <Label Content="Подтердите пароль:" Grid.Row="4" Grid.Column="3" FontSize="12" Foreground="DarkGray"
+               HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
+        <PasswordBox Name="Pass" Password="" FontSize="12" FontFamily="arial"
+               ToolTip="Введите пароль" Height="35" Width="150" Grid.Row="3" Grid.Column="4" 
+               HorizontalAlignment="Center" Background="LightGray"></PasswordBox>
+        <TextBlock Text="Пароль" Foreground="Gray" Name="txtHintPass" 
+               Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="15" FontFamily="arial"></TextBlock>
+        <PasswordBox Name="Passw" Password="" FontSize="30" FontFamily="arial"
+               ToolTip="Подтвердите пароль" Height="35" Width="150" Grid.Row="4" Grid.Column="4" 
+               HorizontalAlignment="Center" Background="LightGray"></PasswordBox>
+        <DatePicker Name="MonthlyCalendar" DisplayDate="3/5/2010" Grid.Row="5" Grid.Column="2" SelectedDateFormat="Short"
+                    DisplayDateStart="3/1/2010" DisplayDateEnd="3/31/2010" FirstDayOfWeek="Monday" Height="35" Width="150" />
+
+        <ComboBox Name="cmbGender" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="35" Width="150">
+            <ComboBoxItem>Мужской</ComboBoxItem>
+            <ComboBoxItem>Женский</ComboBoxItem>
         </ComboBox>
-        <ComboBox Name="cmbRole" Grid.Row="1" Grid.Column="4" Margin="18,15,19,14">
-            <ComboBoxItem>Все роли</ComboBoxItem>
-            <ComboBoxItem>Администратор</ComboBoxItem>
-            <ComboBoxItem>Пользователь</ComboBoxItem>
+        <ComboBox Name="cmbCountry" Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="35" Width="150">
+            <ComboBoxItem>Uganda</ComboBoxItem>
+            <ComboBoxItem>South Africa</ComboBoxItem>
+            <ComboBoxItem>Trinidad and Tobacco</ComboBoxItem>
+            <ComboBoxItem>Cote D'ivoire</ComboBoxItem>
+            <ComboBoxItem>Algeria</ComboBoxItem>
         </ComboBox>
-        <Button Content="Обновить" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35"
- Width="150" Foreground="Black" FontSize="12" FontWeight="Bold"
- FontFamily="Arial" Name="btnRenew" Grid.Column="4" Grid.Row="4"/>
-        
+        <Button Content="Сохранить" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35"
+                Width="150" Foreground="Black" FontSize="12" FontWeight="Bold" FontFamily="Arial" Name="btnSave" 
+                Grid.Column="2" Grid.Row="7"/>
+        <Button Content="Отмена" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35"
+                Width="150" Foreground="Black" FontSize="12" FontWeight="Bold" FontFamily="Arial" Name="btnCancel" 
+                Grid.Column="3" Grid.Row="7"/>
+
     </Grid>
 </Page>

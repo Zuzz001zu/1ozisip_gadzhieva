@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace _1ozisip_gadzhieva.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Str1.xaml
+    /// Логика взаимодействия для Biz.xaml
     /// </summary>
-    public partial class Str1 : Page
+    public partial class Biz : Page
     {
-        public Str1()
+        public Biz()
         {
             InitializeComponent();
-        }
-
-        private void btnReg_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Str2());
-        }
-
-        private void btnAuth_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Profile());
         }
     }
 }
