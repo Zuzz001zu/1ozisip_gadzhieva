@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:_1ozisip_gadzhieva.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Авторизация" Background="LightGray">
+      Title="Авторизация" >
 
     <Grid>
         <Grid.RowDefinitions>
@@ -26,13 +26,13 @@
                HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
         <TextBox Name="txtlog" Text="" FontSize="30" FontFamily="arial"
                  ToolTip="Введите логин" Height="50" Width="220" Grid.Row="0" Grid.Column="2" 
-                 HorizontalAlignment="Center" Background="Transparent"></TextBox>
-        <TextBlock Text="Логин или почта" Foreground="Gray" Name="txtHintLog" Height="50"
-                   Width="220" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"
+                 HorizontalAlignment="Center" Background="LightGray"></TextBox>
+        <TextBlock Text="Логин или почта" Foreground="Gray" Name="txtHintLog" Height="50" 
+                   Width="220" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" 
                    FontSize="22" FontFamily="arial"></TextBlock>
          <PasswordBox Name="Pass" Password="" FontSize="30" FontFamily="arial"
-                 ToolTip="Введите логин" Height="50" Width="220" Grid.Row="0" Grid.Column="2" 
-                 HorizontalAlignment="Center" Background="Transparent"></PasswordBox>
+                 ToolTip="Введите логин" Height="50" Width="220" Grid.Row="1" Grid.Column="2" 
+                 HorizontalAlignment="Center" Background="lightgray"></PasswordBox>
         <TextBlock Text="Пароль" Foreground="Gray" Name="hintPass" Height="50"
                    Width="220" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"
                    FontSize="22" FontFamily="arial"></TextBlock>

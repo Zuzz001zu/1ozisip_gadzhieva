@@ -14,6 +14,8 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"></ColumnDefinition>
@@ -21,26 +23,42 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Content="Логин" Grid.Row="0" Grid.Column="1" FontSize="30" Foreground="DarkOrange"
-           HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
+           HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="arial"/>
         <Label Content="Пароль" Grid.Row="1" Grid.Column="1" FontSize="30" Foreground="DarkOrange"
-           HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
+           HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="arial"/>
+        <Label Content="Подтердите пароль" Grid.Row="2" Grid.Column="1" FontSize="30" Foreground="DarkOrange"
+           HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="arial"/>
+        <Label Content="Введите роль" Grid.Row="3" Grid.Column="1" FontSize="30" Foreground="DarkOrange"
+           HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="arial"/>
+        <Label Content="Введите ФИО" Grid.Row="4" Grid.Column="1" FontSize="30" Foreground="DarkOrange"
+           HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="arial"/>
         <TextBox Name="txtlog" Text="" FontSize="30" FontFamily="arial"
              ToolTip="Введите логин" Height="50" Width="220" Grid.Row="0" Grid.Column="2" 
-             HorizontalAlignment="Center" Background="Transparent"></TextBox>
-        <TextBlock Text="Логин или почта" Foreground="Gray" Name="txtHintLog" Height="50"
-               Width="220" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"
-               FontSize="22" FontFamily="arial"></TextBlock>
+             HorizontalAlignment="Center" Background="LightGray"></TextBox>
+        <TextBlock Text="Логин" Foreground="Gray" Name="txtHintLog" 
+             Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" Margin="0,15,0,16"
+             FontSize="22" FontFamily="arial"></TextBlock>
         <PasswordBox Name="Pass" Password="" FontSize="30" FontFamily="arial"
-             ToolTip="Введите логин" Height="50" Width="220" Grid.Row="0" Grid.Column="2" 
-             HorizontalAlignment="Center" Background="Transparent"></PasswordBox>
-        <TextBlock Text="Пароль" Foreground="Gray" Name="hintPass" Height="50"
-               Width="220" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"
-               FontSize="22" FontFamily="arial"></TextBlock>
+             ToolTip="Введите пароль" Height="50" Width="220" Grid.Row="1" Grid.Column="2" 
+             HorizontalAlignment="Center" Background="LightGray"></PasswordBox>
+        <TextBlock Text="Пароль" Foreground="Gray" Name="txtHintPass" 
+             Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Margin="0,15,0,16"
+             FontSize="22" FontFamily="arial"></TextBlock>
+        <PasswordBox Name="Passw" Password="" FontSize="30" FontFamily="arial"
+             ToolTip="Подтвердите пароль" Height="50" Width="220" Grid.Row="2" Grid.Column="2" 
+             HorizontalAlignment="Center" Background="LightGray"></PasswordBox>
+        <ComboBox Name="cmbRole" Grid.Row="3" Grid.Column="2" Height="50" Width="220">
+            <ComboBoxItem>Администратор</ComboBoxItem>
+            <ComboBoxItem>Пользователь</ComboBoxItem>
+        </ComboBox>
+        <TextBox Name="txtName" Text="" FontSize="30" FontFamily="arial"
+             ToolTip="Введите ФИО" Height="50" Width="220" Grid.Row="4" Grid.Column="2" 
+             HorizontalAlignment="Center" Background="LightGray"></TextBox>
         <Button Name="btnAuth" Content="Вход" FontSize="30" FontWeight="Bold" FontFamily="Arial"
             ToolTip="Нажмите для входа в систему" Height="50" Width="220" 
-            Background="Orange" Foreground="Black" Grid.Row="2" Grid.ColumnSpan="3"></Button>
+            Background="Orange" Foreground="Black" Grid.Row="5" Grid.Column="1"></Button>
         <Button Name="btnReg" Content="Регистрация" FontSize="30" FontWeight="Bold" FontFamily="Arial"
             ToolTip="Нажмите для регистрации" Height="50" Width="220" Background="Orange" 
-            Foreground="Black" Grid.Row="3" Grid.ColumnSpan="3"></Button>
+            Foreground="Black" Grid.Row="5" Grid.Column="2" ></Button>
     </Grid>
 </Page>
