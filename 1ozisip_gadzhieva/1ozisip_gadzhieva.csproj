@@ -74,6 +74,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\StartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Partners.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -98,6 +102,9 @@
   <ItemGroup>
     <Compile Include="Pages\Biz.xaml.cs">
       <DependentUpon>Biz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StartPage.xaml.cs">
+      <DependentUpon>StartPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Partners.xaml.cs">
       <DependentUpon>Partners.xaml</DependentUpon>
@@ -144,6 +151,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pages\Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\Resources\92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pages\Resources\jetdeauFontanZheneva.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
