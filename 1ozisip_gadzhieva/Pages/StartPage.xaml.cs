@@ -59,5 +59,30 @@ namespace _1ozisip_gadzhieva.Pages
             NavigationService.Navigate(new Biz());
         }
 
+        private void Light_Click(object sender, RoutedEventArgs e)
+        {
+            // определяем путь к файлу ресурсов
+            var uri = new Uri("Dictionary.xaml", UriKind.Relative);
+            // загружаем словарь ресурсов
+            ResourceDictionary resourceDict = Application.LoadComponent(uri) as ResourceDictionary;
+            // очищаем коллекцию ресурсов приложения
+            Application.Current.Resources.Clear();
+            // добавляем загруженный словарь ресурсов
+            Application.Current.Resources.MergedDictionaries.Add(resourceDict);
+
+        }
+
+        private void Dark_Click(object sender, RoutedEventArgs e)
+        {
+            // определяем путь к файлу ресурсов
+            var uri = new Uri("Dictionary2.xaml", UriKind.Relative);
+            // загружаем словарь ресурсов
+            ResourceDictionary resourceDict = Application.LoadComponent(uri) as ResourceDictionary;
+            // очищаем коллекцию ресурсов приложения
+            Application.Current.Resources.Clear();
+            // добавляем загруженный словарь ресурсов
+            Application.Current.Resources.MergedDictionaries.Add(resourceDict);
+
+        }
     }
 }

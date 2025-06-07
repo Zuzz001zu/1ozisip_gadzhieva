@@ -25,16 +25,15 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Content="Управление пользователями" Grid.Row="0" FontWeight="Bold" FontFamily="Arial" 
-               FontSize="22" HorizontalAlignment="Center" Foreground="DarkGray" Grid.ColumnSpan="5" Width="328" />
+        <Label Content="Управление пользователями" Grid.Row="0" HorizontalAlignment="Center"  Grid.ColumnSpan="5" Width="328" />
         <Button Content="+ Добавление нового" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40"
                 Width="150" Foreground="Black" FontSize="12" FontWeight="Bold"
                 FontFamily="Arial" Name="btnAdd" Grid.Column="1" Margin="0,42,0,0" Grid.RowSpan="2"/>
-        <Label Content="Фильтр по ролям:" Grid.Column="3" FontSize="12" Foreground="DarkGray"
+        <Label Content="Фильтр по ролям:" Grid.Column="3" 
                HorizontalAlignment="Center"  FontFamily="Arial" Width="186" Margin="0,42,0,0" Grid.RowSpan="2" />
-        <Label Content="Сортировать по:" Grid.Row="1" Grid.Column="3" FontSize="12" Foreground="DarkGray"
+        <Label Content="Сортировать по:" Grid.Row="1" Grid.Column="3" 
                HorizontalAlignment="Center" FontFamily="Arial" Width="186" Margin="0,64,0,0" Grid.RowSpan="2" />
-        <Label Content="Поиск:" Grid.Row="2" Grid.Column="3" FontSize="12" Foreground="DarkGray"
+        <Label Content="Поиск:" Grid.Row="2" Grid.Column="3" 
                HorizontalAlignment="Left" FontFamily="Arial" Width="108" Margin="0,65,0,24" Grid.RowSpan="2" />
         <TextBox Name="txtSearch" Text="" FontSize="15" FontFamily="Arial"
                  ToolTip="Поиск" Width="150" Grid.Row="3" Grid.Column="4"
@@ -54,8 +53,8 @@
         <Button Content="Обновить" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35"
         Width="150" Foreground="Black" FontSize="12" FontWeight="Bold"
         FontFamily="Arial" Name="btnRenew" Grid.Column="4" Grid.Row="4"/>
-        <Label Content="Всего пользователей: 123" Grid.Row="4" FontWeight="Bold" FontFamily="Arial" 
-       FontSize="12" HorizontalAlignment="Center" Foreground="DarkGray" Grid.Column="1"  />
+        <Label Content="Всего пользователей: 123" Grid.Row="4"  
+      HorizontalAlignment="Left" Grid.Column="1"  />
         <DataGrid Grid.Row="5" Grid.ColumnSpan="5" AutoGenerateColumns="False" IsReadOnly="True">
         <!--<DataGrid.Rows>
                 Настройка строк таблицы

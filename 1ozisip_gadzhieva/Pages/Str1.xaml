@@ -20,9 +20,9 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Content="Логин" Grid.Row="0" Grid.Column="1" FontSize="30" Foreground="DarkOrange"
+        <Label Content="Логин" Grid.Row="0" Grid.Column="1" FontSize="30" 
                HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
-        <Label Content="Пароль" Grid.Row="1" Grid.Column="1" FontSize="30" Foreground="DarkOrange"
+        <Label Content="Пароль" Grid.Row="1" Grid.Column="1" FontSize="30" 
                HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
         <TextBox Name="txtlog" Text="" FontSize="30" FontFamily="arial"
                  ToolTip="Введите логин" Height="50" Width="220" Grid.Row="0" Grid.Column="2" 
@@ -36,11 +36,11 @@
         <TextBlock Text="Пароль" Foreground="Gray" Name="hintPass" Height="50"
                    Width="220" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"
                    FontSize="22" FontFamily="arial"></TextBlock>
-        <Button Name="btnAuth" Content="Вход" FontSize="30" FontWeight="Bold" FontFamily="Arial"
+        <Button Name="btnAuth" Content="Вход" 
                 ToolTip="Нажмите для входа в систему" Height="50" Width="220" 
-                Background="Orange" Foreground="Black" Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" Margin="240,31,290,32" Click="btnAuth_Click"></Button>
-        <Button Name="btnReg" Content="Регистрация" FontSize="30" FontWeight="Bold" FontFamily="Arial"
-                ToolTip="Нажмите для регистрации" Height="50" Width="220" Background="Orange" 
-                Foreground="Black" Grid.Row="3" Grid.ColumnSpan="3" Click="btnReg_Click"></Button>
+                 Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" Margin="240,31,290,32" Click="btnAuth_Click"></Button>
+        <Button Name="btnReg" Content="Регистрация" 
+                ToolTip="Нажмите для регистрации" Height="50" Width="220"  
+                Grid.Row="3" Grid.ColumnSpan="3" Click="btnReg_Click"></Button>
     </Grid>
 </Page>

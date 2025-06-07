@@ -15,10 +15,10 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Label Content="Бизнес-партнеры" Grid.Row="0" FontWeight="Bold" FontFamily="Arial" 
-       FontSize="22" HorizontalAlignment="Center" Foreground="DarkGray" />
+       FontSize="22" HorizontalAlignment="Center"  />
         <Button Content="+ Добавить нового" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40"
-       Width="150" Foreground="Black" FontSize="12" FontWeight="Bold"
-       FontFamily="Arial" Name="btnAddNew" Grid.Column="1" Margin="0,42,0,0" />
+       Width="150"   
+      Name="btnAddNew" Grid.Column="1" Margin="0,42,0,0" />
         <DataGrid Grid.Row="5" Grid.ColumnSpan="5" AutoGenerateColumns="False" IsReadOnly="True">
 
             <DataGrid.Columns>

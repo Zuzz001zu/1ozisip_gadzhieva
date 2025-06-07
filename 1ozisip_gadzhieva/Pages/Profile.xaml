@@ -27,40 +27,39 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Content="Редактирование профиля" Grid.Row="0" FontWeight="Bold" FontFamily="Arial" 
-            FontSize="22" HorizontalAlignment="Center" Foreground="DarkGray" Grid.ColumnSpan="5"/>
-        <Label Content="Email:" Grid.Row="1" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-            HorizontalAlignment="Right" FontFamily="Arial" />
-        <Label Content="the.email@address.com" FontStyle="Italic" Grid.Row="1" Grid.Column="2" FontSize="12" Foreground="DarkGray"
+        <Label Content="Редактирование профиля" Grid.Row="0" HorizontalAlignment="Center" Grid.ColumnSpan="5"/>
+        <Label Content="Email:" Grid.Row="1" Grid.Column="1" 
+            HorizontalAlignment="Left"  />
+        <Label Content="the.email@address.com" FontStyle="Italic" Grid.Row="1" Grid.Column="2" 
             HorizontalAlignment="Left" FontFamily="Arial" />
-        <Label Content="Имя:" Grid.Row="2" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-            HorizontalAlignment="Right" FontFamily="Arial" />
+        <Label Content="Имя:" Grid.Row="2" Grid.Column="1" 
+            HorizontalAlignment="Left"  />
         <TextBox Name="txtName" Text="" FontSize="15" FontFamily="Arial" Height="35" Width="150"
             ToolTip="Имя" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center"/> 
         <TextBlock Text="Имя" Foreground="Gray" Name="txtNme" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"
              TextAlignment="Center" FontSize="15" FontFamily="arial">
             </TextBlock> 
-            <Label Content="Фамилия:" Grid.Row="3" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-            HorizontalAlignment="Right" FontFamily="Arial" />
+            <Label Content="Фамилия:" Grid.Row="3" Grid.Column="1" 
+            HorizontalAlignment="left"  />
         <TextBox Name="txtSurname" Text="" FontSize="15" FontFamily="Arial" Height="35" Width="150"
             ToolTip="Фамилия" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" />
         <TextBlock Text="Фамилия" Foreground="Gray" Name="txtSrnm" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" 
              VerticalAlignment="Center" TextAlignment="Center" FontSize="15" FontFamily="arial"></TextBlock>
-        <Label Content="Пол:" Grid.Row="4" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-            HorizontalAlignment="Right" FontFamily="Arial" />
-        <Label Content="Дата рождения:" Grid.Row="5" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-           HorizontalAlignment="Right" FontFamily="Arial"/>
-        <Label Content="Страна:" Grid.Row="6" Grid.Column="1" FontSize="12" Foreground="DarkGray"
-           HorizontalAlignment="Right" FontFamily="Arial"/>
-        <Label Content="Смена пароля" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" FontSize="20" Foreground="DarkGray"
-               HorizontalAlignment="Center"  FontFamily="Arial" />
+        <Label Content="Пол:" Grid.Row="4" Grid.Column="1" 
+            HorizontalAlignment="left"  />
+        <Label Content="Дата рождения:" Grid.Row="5" Grid.Column="1" 
+           HorizontalAlignment="left" />
+        <Label Content="Страна:" Grid.Row="6" Grid.Column="1" 
+           HorizontalAlignment="left" FontFamily="Arial"/>
+        <Label Content="Смена пароля" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="2" 
+               HorizontalAlignment="Center"   />
         <Label Content="Оставьте эти поля, незаполненными, если вы не хотите изменять пароль." FontStyle="Italic"
-               Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="2"  FontSize="12" Foreground="DarkGray" HorizontalAlignment="Center"  
-               FontFamily="Arial" Grid.RowSpan="2"/>
-        <Label Content="Пароль:" Grid.Row="3" Grid.Column="3" FontSize="12" Foreground="DarkGray"
-               HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
-        <Label Content="Подтердите пароль:" Grid.Row="4" Grid.Column="3" FontSize="12" Foreground="DarkGray"
-               HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="arial"/>
+               Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="2" FontSize="8" HorizontalAlignment="Center"  
+                Grid.RowSpan="2"/>
+        <Label Content="Пароль:" Grid.Row="3" Grid.Column="3" 
+               HorizontalAlignment="left" VerticalAlignment="Center" FontFamily="arial"/>
+        <Label Content="Подтердите пароль:" Grid.Row="4" Grid.Column="3" 
+               HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="arial"/>
         <PasswordBox Name="Pass" Password="" FontSize="12" FontFamily="arial"
                ToolTip="Введите пароль" Height="35" Width="150" Grid.Row="3" Grid.Column="4" 
                HorizontalAlignment="Center" Background="LightGray"></PasswordBox>

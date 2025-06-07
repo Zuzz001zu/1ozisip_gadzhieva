@@ -23,8 +23,8 @@
             </MenuItem>
             <MenuItem Header="Настройки">
                 <MenuItem Header="Тема" >
-                    <MenuItem Name="Light" Header="Светлая" ></MenuItem>
-                    <MenuItem Name="Dark" Header="Темная" ></MenuItem>
+                    <MenuItem Name="Light" Header="Светлая" Click="Light_Click"></MenuItem>
+                    <MenuItem Name="Dark" Header="Темная" Click="Dark_Click"></MenuItem>
                 </MenuItem>
                 <Separator />
                 <MenuItem Header="Фоновый рисунок" >

@@ -15,14 +15,13 @@
         <Frame Name="MainFrame" Grid.Row="1" HorizontalAlignment="Center" 
                Source="Pages/StartPage.xaml" VerticalAlignment="Bottom">
         </Frame>
-        <Button Content="Назад" Background="LightYellow" HorizontalAlignment="Left"
-                Width="100" Height="40" Foreground="Orange" FontSize="26" 
-                FontWeight="bold" FontFamily="Arial" Margin="0,2,0,3" Name="Back"
+        <Button Content="Назад" Background="LightYellow" HorizontalAlignment="Left" Style="{StaticResource ButtonBase}"
+                 Margin="0,2,0,3" Name="Back"
                 ToolTip="Кликните для возврата на предыдущую страницу" Grid.Row="0" Click="Back_Click_1">
         </Button>
         
-        <Label Content="Разработчик: 1озИСИП-2124, Гаджиева З.А." Grid.Row="2" FontWeight="bold" 
-               FontFamily="Arial" FontSize="22" HorizontalAlignment="Center" Foreground="Orange"/>
+        <Label Content="Разработчик: 1озИСИП-2124, Гаджиева З.А." Grid.Row="2" 
+                HorizontalAlignment="Center" />
 
     </Grid>
 </Window>
